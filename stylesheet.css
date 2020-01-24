@@ -8,5 +8,9 @@ a {
 }
 #windowOfPain {
  border-radius: 15px 50px;
-  
+ display: 100px; 
+ top: 44px; 
+ height: 100%; 
+ width: 25%; 
+ background-color: whitesmoke;
 }
