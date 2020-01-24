@@ -1,0 +1,70 @@
+h1 {
+ font-family: "Helvetica";
+ color: white;
+}
+#windowOfPain a {
+ font-family:"Helvetica";
+ text-decoration:none;
+ display: block;
+ color: white;
+ padding: 16px;
+ border-top: 1px solid gray;
+}
+#windowOfPain {
+  margin: 0;
+  padding: 5px;
+  width: 200px;
+  background-color:dimgrey;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-radius: 0 20px 20px 0;
+
+}
+
+#windowOfPain #events {
+  background-color: rgba(65, 61, 61, 0.966);
+  color: white;
+  border-radius:25px
+}
+#windowOfPain a:hover:not(#events){
+  background-color: #555;
+  color: white;
+  border-radius:25px
+}
+
+#mainDoc{
+ margin-left:200px;
+ padding: 1px 16px;
+ height: 1000px;
+}
+body {
+ background-color:black;
+}
+
+p {
+  color:gainsboro;
+  font-family:Helvetica;
+}
+
+@media screen and (max-width: 700px) {
+  #windowOfPain{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #windowOfPain a {float: left;}
+
+  #mainDoc {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  #windowOfPain a {
+    text-align: center;
+    float: none;
+  }
+}
+h2 {
+  color:gainsboro;
+  font-family: Helvetica;
+}
