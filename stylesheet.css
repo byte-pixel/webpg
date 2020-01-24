@@ -1,25 +1,65 @@
 h1 {
  font-family: "Helvetica";
- color: "white";
+ color: white;
 }
-a {
+#windowOfPain a {
  font-family:"Helvetica";
- color: "white";
  text-decoration:none;
+ display: block;
+ color: white;
+ padding: 16px;
+ border-top: 1px solid gray;
 }
 #windowOfPain {
- border-radius: 15px 50px;
- display: 100px; 
- top: 44px; 
- height: 100%; 
- width: 25%; 
- background-color: whitesmoke;
- text-align:left;
+  margin: 0;
+  padding: 5px;
+  width: 200px;
+  background-color:dimgrey;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-radius: 0 20px 20px 0;
+
 }
+
+#windowOfPain #home {
+  background-color: rgba(65, 61, 61, 0.966);
+  color: white;
+  border-radius:25px
+}
+#windowOfPain a:hover:not(#home){
+  background-color: #555;
+  color: white;
+  border-radius:25px
+}
+
 #mainDoc{
- margin-left:25%;
- text-align: center;
+ margin-left:200px;
+ padding: 1px 16px;
+ height: 1000px;
 }
 body {
- background-color:"black";
+ background-color:black;
+}
+
+p {
+  color:gainsboro;
+}
+
+@media screen and (max-width: 700px) {
+  #windowOfPain{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #windowOfPain a {float: left;}
+
+  #mainDoc {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  #windowOfPain a {
+    text-align: center;
+    float: none;
+  }
 }
