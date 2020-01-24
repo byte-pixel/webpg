@@ -14,8 +14,11 @@ a {
  height: 100%; 
  width: 25%; 
  background-color: whitesmoke;
+ text-align:left;
 }
 #mainDoc{
  margin-left:25%;
 }
-
+body {
+ background-color:"black";
+}
